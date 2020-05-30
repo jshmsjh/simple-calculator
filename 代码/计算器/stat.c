@@ -4,6 +4,7 @@
 #include<stdio.h>
 #include<math.h>
 #define MAXN 10000000
+#define MINN -10000000 
 #define LL long long
 
 /*
@@ -28,7 +29,7 @@ freq:频数,totn:频数和
 int n,totn,freq_on=0,freq[100],freqs[100];
 double ave_x,sumx=0,sumx2=0,o2x,ox,s2x,sx,sumx3=0,sumx4=0;
 double ave_y,sumy=0,sumy2=0,o2y,oy,s2y,sy,sumxy=0,sumx2y=0;
-double minx=MAXN,maxx=0,miny=MAXN,maxy=0,t,s[100];
+double minx=MAXN,maxx=MINN,miny=MAXN,maxy=MINN,t,s[100];
 
 double min(double a,double b){
 	if(a<b) return a;else return b;
