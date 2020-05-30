@@ -41,9 +41,12 @@
     }
 
     //生成m到n的随机数
-	int random(int m,int n)
+	int getrandom(int Max,int Min)
 	{
-		return rand()%(n-m+1)+m;
+	  int t=0;
+	  srand(time(NULL));
+	  t = (rand()%(MAX - MIN)) + MIN;
+          return t;
 	}
 
   
