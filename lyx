@@ -72,21 +72,3 @@
 		return pv;
 	}
 
-//求微分：黎曼和
-// void integration(float f(float),float a,float b) //f(float)，f(x)。float a，float b，区间两点
-// {
-// float x,t2=0; //t2,矩形总面积
-// float n=1000; //n值越大，精确值越高
-// float h; //矩形宽度
-// float t1=0; //单个矩形面积
-// h=(a-b)/n;
-// //矩形宽度为面积总长度除以矩形个数
-// for(float i=1;i<=1000;i++) //计算每个矩形的面积
-// {
-// x=b+h*i; //通过i的变化，得出每个矩形底部x的值
-// t1=f(x)*h; //用x做实参调用函数进一步求出y值，既矩形的高度，底乘高得出面积
-// t2=t2+t1; //各个矩形面积相加
-// }
-// printf("the value of function is %f",t2);
-
-// }
