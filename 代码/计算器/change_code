@@ -1,0 +1,144 @@
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+
+void change(char a[])
+{
+    int length;int i;
+    length=strlen(a);
+    if(a[0]==36 & a[1]==36)                                 //判断起始位置
+    {
+        for(i=3;i<(length-3);i++)                          //开始进入转化
+        {
+            if(a[i]==47)                                   //一些特殊以“/”开始的运算
+            {
+                if(a[i+1]==102 & a[i+2]==114 & a[i+3]==97 & a[i+4]==99)                             //分数
+                {
+                    printf("%s","分数");
+                    i=i+5;
+                }
+                else if(a[i+1]==115 & a[i+2]==113 & a[i+3]==114 & a[i+4]==116)                       //开根号
+                {
+                    printf("%s","根号");
+                    i=i+5;
+                }
+                 else if(a[i+1]==108 & a[i+2]==111 & a[i+3]==103)                      //对数
+                {
+                    printf("%s","log");
+                    i=i+4;
+                }
+                else if(a[i+1]==108 & a[i+2]==110)                          // ln函数
+                {
+                    printf("%s","ln");
+                    i=i+3;
+                }
+                else if(a[i+1]==115 & a[i+2]==117 & a[i+3]==109)
+                {
+                    printf("%s","求和");
+                    i=i+4;
+                }                                    //求和公式
+                else if(a[i+1]==118 & a[i+2]==101 & a[i+3]==99)                     //向量
+                {
+                    printf("%s","向量");
+                    i=i+4;
+                }
+                else if(a[i+1]==98 & a[i+2]==101 & a[i+7]==112 & a[i+8]==109)             //矩阵
+                {
+                    printf("%s","矩阵");
+                    i=i+15;
+                }
+                else if(a[i+1]==101 & a[i+2]==110 & a[i+3]==100)
+                {
+                    i=i+12;
+                }
+                else if(a[i+1]==105 & a[i+2]==110 & a[i+3]==116)                                 //积分
+                {
+                    if(a[i+4]=='_')
+                    {
+                        printf("%s","定积分");
+                        i=i+5;
+                    }
+                    else 
+                    {
+                        printf("%s","不定积分");
+                        i=i+4;
+                    }
+                }
+                else if(a[i+1]==112 & a[i+2]==105)                           //π
+                {
+                    printf("%s","π");
+                    i=i+3;
+                }
+                else if(a[i+1]==105 & a[i+2]==110 & a[i+3]==102 & a[i+4]==116 & a[i+5]==121)          //无穷
+                {
+                    printf("%s","无穷大");
+                    i+i+6;
+                }
+            }
+
+            if(a[i]==115 & a[i+1]==105 & a[i+2]==110)              //三角函数
+            {
+                printf("%s","sin");
+                i=i+3;
+            } 
+            else if(a[i]==99 & a[i+1]==111 & a[i+2]==115)
+            {
+                printf("%s","cos");
+                i=i+3;
+            }
+            else if(a[i]==116 & a[i+1]==97 &  a[i+2]==110)
+            {
+                printf("%s","tan");
+                i=i+3;
+            }
+
+            if(a[i]==97 & a[i+1]==114 & a[i+2]==99)            //反三角函数
+            {
+                if(a[i+3]==115)
+                {
+                    printf("%s","arcsin");
+                }
+                else if(a[i+3]==99)
+                {
+                    printf("%s","arccos");
+                }
+                else if(a[i+3]==116)
+                {
+                    printf("%s","arctan");
+                }
+                i=i+6;
+            }
+
+            if(a[i]=='{' & a[i+1]=='{')                     //括号
+            {
+                printf("%s","(");
+            }
+            else if(a[i]=='}' & a[i+2]=='}')
+            {
+                printf("%s",")");
+            }
+            else if(a[i]=='{' & a[i+1]!='{')
+            {
+                printf(" ");                               //数字若不连续 则用空格断开
+            }
+
+            if(a[i]!='{' & a[i]!='}')
+            {
+                printf("%c",a[i]);
+            }
+        }
+    }
+    if(a[length-1]==36 & a[length-2]==36)
+    {
+        printf("\n");
+    }
+}
+
+
+void main(void)
+{
+    char a[]={"$${/begin{pmatrix}1&x//2&x^2///end{vmatrix}}$$"};
+    char b[]={"$${/frac{{/sqrt[{3}]{8}}}{9}}$$"};
+    change(b);
+    change(a);
+}
