@@ -17,8 +17,9 @@ double y_2(double x,double g)
 }
 
 //表格函数 
-double chart(double x, double xt, double d, double f, double g)
+double chart(double f, double g)
 {	
+        double x;double xt;double d;
 	printf("请输入表格自变量的起点x、终点xt、步长d\n");
 	scanf("%lf%lf%lf", &x,&xt,&d);
 	printf("x\t \t \t  f(x)\t \t \t  g(x)\n");
