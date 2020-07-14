@@ -84,7 +84,11 @@
    - ab_index_regression():ab指数回归
    - multiplier_regeression():乘方回归
    - inverse_regression():逆回归
-   ？？
+   - double_variable_stat():双变量统计
+   - qsort(l,r):快速排序
+   - gaussian_distribution():高斯分布
+   - single_variable_stat():单变量统计
+   
 ## vector向量计算
    - multi(k,e1,e1_info):输入一个数，一个向量的坐标以及该向量的维度，求出数乘后的坐标
    - module(e1,e1_info):输入一个向量以及该向量的维度，求出该向量的模
