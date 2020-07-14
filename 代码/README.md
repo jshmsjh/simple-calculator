@@ -1,8 +1,8 @@
-#Machine_learning
+# Machine_learning
 一个模拟Casio fx991cn x计算机做的学习机部分计算的实现代码，学习过程中做的总结，资历尚浅，如有错误请不吝指出。
 
-#目录代码介绍
--BaseConversion进制转换
+# 目录代码介绍
+- BaseConversion进制转换
    Underten_To_Ten(x,p):输入数字字符串和该数字进制（十以下），返回该数字的十进制数
    Sixteen_To_TenNum(a):输入十六进制字符串，返回该数字的十进制数
    TenStr_To_TeNum(a):输入十进制字符串，返回十进制数字
