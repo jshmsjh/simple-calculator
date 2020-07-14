@@ -33,6 +33,6 @@ double chart(double f, double g)
 int main()
 {
 	double x,xt,d,f,g;
-	printf("%lf",chart(x,xt,d,f,g));
+	printf("%lf",chart(f,g));
 	
 }
