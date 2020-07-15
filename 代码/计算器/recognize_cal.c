@@ -3,19 +3,19 @@
 #include <string.h>
 #include <stdlib.h>
 /*
-    º¯Êý¹¦ÄÜËµÃ÷£ºÊýÑ§º¯Êý×Ö·û´®Ê¶±ðÓë¼ÆËã  ×÷Õß£ºÍõÒ»Âö
+    å‡½æ•°åŠŸèƒ½è¯´æ˜Žï¼šæ•°å­¦å‡½æ•°å­—ç¬¦ä¸²è¯†åˆ«ä¸Žè®¡ç®—  ä½œè€…ï¼šçŽ‹ä¸€è„‰
 	
-	Function_Calculation(char* FormulaInput, float x)    FormulaInputÎªÊýÑ§º¯Êý×Ö·û´®    xÎª±äÁ¿Öµ
+	Function_Calculation(char* FormulaInput, float x)    FormulaInputä¸ºæ•°å­¦å‡½æ•°å­—ç¬¦ä¸²    xä¸ºå˜é‡å€¼
 	
-	                                                     ¸Ãº¯Êý¿ÉÊ¶±ðÊýÑ§º¯Êý£¬²¢ÇÒ½«x´úÈëÊýÑ§º¯Êý¼ÆËã³öÏàÓ¦½á¹û
+	                                                     è¯¥å‡½æ•°å¯è¯†åˆ«æ•°å­¦å‡½æ•°ï¼Œå¹¶ä¸”å°†xä»£å…¥æ•°å­¦å‡½æ•°è®¡ç®—å‡ºç›¸åº”ç»“æžœ
 														 
-														 Ê¹ÓÃÀý×Ó¼ûÎÄÄ©µÄmain1Óëmain2
+														 ä½¿ç”¨ä¾‹å­è§æ–‡æœ«çš„main1ä¸Žmain2
 */
 
 
 char  FormulaInput[80];
 
-char  Func_Part[20];   //º¯Êý²ð·ÖµÃµ½µÄ×Ö·û´®
+char  Func_Part[20];   //å‡½æ•°æ‹†åˆ†å¾—åˆ°çš„å­—ç¬¦ä¸²
 
 char  sinx[] = "sinx";
 
