@@ -57,6 +57,9 @@
    - get_prime_list(n):输出这个数的素数表
    - get_prime(x):质因数分解
    
+## pinyin中文拼音输入法
+   - 将常用的拼音对应的字建成字符串，利用字母表进行索引
+   
 ## polar排列组合、极坐标
    - a(m,n):计算排列数
    - c(m,n):计算组合数
@@ -67,6 +70,8 @@
    
 ## proportion解比例式
    - proportion(a,b,c,x):输入a、b、c三个数字，求出a:b=x:c中的x的值
+   
+## 函数识别与计算
    
 ## solving_equations解方程
    - one_one(a,b):依次输入一元一次方程的系数，解出X的值
@@ -103,7 +108,3 @@
    - taddition(e1,e2,e3,e1_info,e2_info,e3_info):输入三个向量以及它们的维度，求出这三个向量的和
    - tcross_multi(e1,e2,e3,e1_info,e2_info,e3_info):输入三个向量以及它们的维度，求出叉乘的结果
    
-## 函数识别与计算
-
-## 中文拼音输入法
-   - 将常用的拼音对应的字建成字符串，利用字母表进行索引
