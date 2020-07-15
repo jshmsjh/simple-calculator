@@ -23,6 +23,9 @@
    - complexByAbsAngle(r,theta):通过模和相角合成复数
    - assert_failed:打印出错的函数
    
+## calc基础计算
+   _ 基础计算的整合
+
 ## change_code公式转换
    - change(a):输入LaTeX，转换成可以被理解的形式
    
@@ -99,3 +102,8 @@
    - angle(e1,e2,e1_info,e2_info):输入两个向量以及它们的维度，求出这两个向量之间的夹角
    - taddition(e1,e2,e3,e1_info,e2_info,e3_info):输入三个向量以及它们的维度，求出这三个向量的和
    - tcross_multi(e1,e2,e3,e1_info,e2_info,e3_info):输入三个向量以及它们的维度，求出叉乘的结果
+   
+## 函数识别与计算
+
+## 中文拼音输入法
+   - 将常用的拼音对应的字建成字符串，利用字母表进行索引
